@@ -1,0 +1,24 @@
+type Query {
+    findAllEmployee: [Employee]
+    countEmployee: Int
+}
+
+type Department {
+    deptId: String
+    deptName: String
+    deptType: DepartmentType
+}
+
+type Employee {
+    empId: String
+    empName: String
+    department: Department
+    empAge: Int
+}
+
+enum DepartmentType {
+   IT
+   FINANCE
+   COE
+   HR
+}
